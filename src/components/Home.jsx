@@ -12,8 +12,12 @@ class Home extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="introduction">
-                    <h1>Chimera Creative Labs</h1>
+                <div id="home">
+                    <div id="top-banner">
+                        <div id="banner-text">
+                        <h1>Chimera Creative Labs</h1>
+                        </div>
+                    </div>
                 </div>
             </React.Fragment>
         )

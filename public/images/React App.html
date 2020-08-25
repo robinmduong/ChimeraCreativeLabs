@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://localhost:3000/portfolio/webmall-inventory -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+</style><style type="text/css">@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap);</style><style type="text/css">@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap);</style><style type="text/css">
+html, body {
+  width: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  text-shadow: 1px  2px black;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.body-text {
+  padding: 20px 100px;
+}
+
+:target::before {
+  content: "";
+  display: block;
+  height: 100px; /* fixed header height*/
+  margin: -100px 0 0; /* negative fixed header height */
+}
+
+.App {
+  text-align: center;
+}
+
+
+ #banner-text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  letter-spacing: 8px;
+  line-height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio-card-deck {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  height: 400px;
+  transition: 0.3s;
+  margin: 1%;
+  display: inline-block;
+  width: 48%;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.portfolio-image {
+  height: 85%;
+  object-fit: cover;
+  object-position: top left;
+  width: 100%;
+}
+
+.portfolio-card-text {
+  line-height: 50%;
+  text-align: center;
+}
+
+.skill-deck {
+  max-width: 100%;
+}
+
+.skill-icon {
+  background-color: rgb(100, 100, 100);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 5px 20px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.contact-me-list li:hover {
+  font-size: 1.1em;
+}
+
+.fa {
+  padding-right: 10px;
+}
+
+.footer {
+  background-color: black;
+  box-shadow: 1px 1px 1px #222;
+  color: white;
+  font-size: 0.8em;
+  font-family: 'Raleway', sans-serif;
+  padding: 15px;
+  text-align: center;
+}
+
+
+.topnav {
+  background-color: black;
+  box-shadow: 1px 1px 1px #222;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  min-width: 100%;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  z-index: 99;
+}
+
+.topnav a {
+  color: #fff;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  height: 30px;
+  line-height: 30px;
+  padding: 20px 40px 20px 20px;
+}
+
+.chimera-logo {
+  align-items: left;
+  display: inline-block;
+  left: 0%;
+  margin-left: 35px;
+  margin-bottom: 5px;
+  position: fixed;
+  width: 100px;
+  vertical-align: middle;
+}
+
+.topnav a:hover {
+  color: lawngreen;
+  transition: 0.3s;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+#top-banner {
+  background: linear-gradient(0deg, rgb(82, 81, 81) 0%, rgb(0, 0, 0) 100%);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 230px 0px 160px 0px;
+  position: relative;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-card {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .body-text {
+    padding: 5%;
+  }
+  .topnav {
+    padding: 10px 20px;
+  }
+  .chimera-logo {
+    display: none;
+  }
+  .portfolio-card {
+    width: 100%;
+    height: 400px;
+  }
+  .skill-deck {
+    font-size: 0.9em;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+    padding: 4px 15px;
+    ;}
+  .topnav a.icon {
+    display: block;
+    float: right;
+  }
+  .topnav.responsive {
+    position: fixed;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+  #banner-text {
+    font-size: 1.4em;
+    line-height: 3.5em;
+  }
+  #top-banner {
+    padding: 100px 0px 60px 0px;
+  }
+  .portfolio-image {
+    height: 100%;
+  }
+  .portfolio-card-text {
+    display: none;
+  }
+}</style></head>
+  <body class="vsc-initialized">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="topnav" id="myTopNav"><img src="./React App_files/chimera-logo-white-1.png" class="chimera-logo"><link rel="stylesheet" href="./React App_files/font-awesome.min.css"><a class="home" href="http://localhost:3000/portfolio/webmall-inventory#home">Home</a><a class="about" href="http://localhost:3000/portfolio/webmall-inventory#about">About</a><a class="home" href="http://localhost:3000/portfolio/webmall-inventory#portfolio">Portfolio</a><a class="contact" href="http://localhost:3000/portfolio/webmall-inventory#contact">Contact</a><a class="collapse-navbar icon" href="http://localhost:3000/portfolio/webmall-inventory"><i class="fa fa-bars"></i></a></div><div><div id="home"><div id="top-banner"><div id="banner-text"><h1>Chimera Creative Labs</h1></div></div></div></div><div class="footer">© 2020, Chimera Creative Labs</div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js.download"></script><script src="./React App_files/0.chunk.js.download"></script><script src="./React App_files/main.chunk.js.download"></script><script src="./React App_files/main.90d77bff42018f12a0fa.hot-update.js.download"></script>
+
+</body></html>

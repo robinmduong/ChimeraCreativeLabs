@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router} from "react-router-dom";
 import './index.css';
 import App from './App';
+import Contact from "./components/Contact";
+import TopNav from "./components/TopNav";
+import Footer from "./components/Footer";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+     <TopNav />
      <App />
+     <Contact />
+     <Footer />
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

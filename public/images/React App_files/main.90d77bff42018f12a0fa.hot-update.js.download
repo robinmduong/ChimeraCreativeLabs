@@ -1,0 +1,35 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/components/portfolio/WebMall.jsx":
+/*!**********************************************!*\
+  !*** ./src/components/portfolio/WebMall.jsx ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\robin\\Dropbox\\Chimera Creative Labs\\ChimeraCreativeLabs.com\\react-folder\\src\\components\\portfolio\\WebMall.jsx";
+
+
+const WebMall = props => {
+  console.log(props);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "images/webmall-inventory",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 9
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (WebMall);
+
+/***/ })
+
+})
+//# sourceMappingURL=main.90d77bff42018f12a0fa.hot-update.js.map
