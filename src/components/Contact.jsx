@@ -12,7 +12,12 @@ class Contact extends Component {
                         <li><a href="https://www.github.com/robinmduong"><i className="fa fa-github" alt="GitHub"></i>GitHub</a></li>
                         <li><a href="https://www.linkedin.com/in/robinmduong"><i className="fa fa-linkedin"></i>LinkedIn</a></li>
                         <li><i className="fa fa-phone" alt="phone-number"></i>(650) 636-7009</li>
-                        <li><i className="fa fa-envelope" alt="email"></i>robinmduong@gmail.com</li>
+                        <li>
+                            <a href="mailto:robinmduong@gmail.com?subject=Email from ChimeraCreativeLabs.com">
+                                <i className="fa fa-envelope" alt="email"></i>
+                                robinmduong@gmail.com
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
