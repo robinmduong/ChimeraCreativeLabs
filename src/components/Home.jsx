@@ -12,8 +12,8 @@ class Home extends Component {
     render() {
         return (
             <React.Fragment>
-                <div id="home">
-                    <div id="top-banner">
+                <div id="home" class="desaturate">
+                    <div id="hero-banner">
                         <div id="banner-text">
                         <h1>Chimera Creative Labs</h1>
                         </div>

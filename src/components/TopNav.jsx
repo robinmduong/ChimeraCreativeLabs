@@ -18,7 +18,7 @@ class TopNav extends Component {
         return (
             <React.Fragment>
             <div className="topnav" id="myTopNav">
-                <a href="/"><img src="../images/chimera-logo-white-1.png" className="chimera-logo" alt="Chimera Creative Labs logo"></img></a>
+                {/* <a href="/"><img src="../images/chimera-logo-white-1.png" className="chimera-logo" alt="Chimera Creative Labs logo"></img></a> */}
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
                     <a className="home" href="/#home">Home</a>
                     <a className="about" href="/#about">About</a>
