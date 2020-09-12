@@ -10,4 +10,4 @@ Have a project you want to discuss? <a href="https://www.linkedin.com/in/robinmd
 
 ### Hero Banner From ChimeraCreativeLabs
 
-![Chimera Creative Labs Banner Image](images\Chimera-Eye.png)
+![Chimera Creative Labs Banner Image](public\images\Chimera-Eye.png)
