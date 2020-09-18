@@ -6,8 +6,8 @@ class Contact extends Component {
         return (
             <div className="page-contents" id="contact">
                 <div className="contact-info">
-                    <p>Want to talk about about a project or code?</p>
-                    <h3 >Let's connect!</h3>
+                    <h1 className="contact-question">Want to work together?</h1>
+                    <h2>Let's connect!</h2>
                     <ul className="contact-me-list">
                         <li><a href="https://www.github.com/robinmduong"><i className="fa fa-github" alt="GitHub"></i>GitHub</a></li>
                         <li><a href="https://www.linkedin.com/in/robinmduong"><i className="fa fa-linkedin"></i>LinkedIn</a></li>

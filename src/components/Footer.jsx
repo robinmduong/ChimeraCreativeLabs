@@ -5,7 +5,7 @@ class Footer extends Component {
     render() {
         return (
             <div className="footer">
-                © 2020, Chimera Creative Labs
+                Chimera Creative Labs <span className="yellow">©2020</span>
             </div>
         )
     }

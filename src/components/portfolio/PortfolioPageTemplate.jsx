@@ -20,11 +20,14 @@ const PortfolioPageTemplate = (props) => {
                     </span> 
                 <h2 className="portfolio-page-header">Technologies</h2>
                     <span className="technologies-used">
-                        <ul className="skills-list">
-                            {item.skills.map(skill => <li key={skill} className="skill-icon">{skill}</li>)}
+                        <ul className="skill-icon-list">
+                            {item.skills.map(skill => <li key={skill} className="skill-container"><img className="skill-icon" src={skill}></img></li>)}
                         </ul>
                     </span>
-                    <a id="portfolio-home-button" 
+                <h2 className="portfolio-page-header">Source Code</h2>
+                    <p className="description"><a href={item.sourceCode}>View Project on GitHub</a></p>
+
+                    <a id="portfolio-home-button" className="button"
                         href="/#portfolio">
                             Return to Portfolio
                     </a>
