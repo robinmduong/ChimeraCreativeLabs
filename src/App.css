@@ -11,6 +11,14 @@ a:visited {
   text-decoration: none;
 }
 
+#footer-link {
+  color: white;
+}
+
+#footer-link:visited {
+  color: white;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -71,7 +79,6 @@ h1 {
 }
 
 .portfolio-details-image {
-  box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.2);
   display: block;
   margin: auto;
   height: 500px;
@@ -126,6 +133,10 @@ h1 {
   color: #FFD100
 }
 
+.portfolio-details-image, .portfolio-card {
+  box-shadow: 3px 2px 15px 2px rgba(0,0,0,0.4);
+}
+
 .portfolio-card-deck {
   display: flex;
   flex-direction: row;
@@ -134,16 +145,16 @@ h1 {
 }
 
 .portfolio-card {
-  box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.2);
   height: 400px;
   transition: 0.3s;
   margin: 1%;
+  margin-bottom: 4%;
   display: inline-block;
   width: 48%;
 }
 
 .portfolio-card:hover {
-  box-shadow: 1px 8px 16px 1px rgba(0,0,0,0.2);
+  box-shadow: 1px 8px 16px 1px rgba(0,0,0,0.4);
   transition: 0.3s;
 }
 
@@ -189,8 +200,8 @@ h1 {
 
 .skill-icon {
   max-height: 100px;
-  max-width: 210px;
-  margin-right: 40px;
+  max-width: 320px;
+  margin-right: 50px;
   margin-bottom: 20px;
 }
 
@@ -223,8 +234,11 @@ ul {
   background-color: lightgray;
 }
 
-.contact-me-list li, #topnav li {
+.contact-me-list li{
   list-style: none;
+  display: inline-block;
+  padding: 0px 16px;
+  font-size: 2.2em;
 }
 
 .contact-me-list li:hover, .contact-me-list a:hover {
@@ -235,6 +249,10 @@ ul {
 
 .contact-question {
   text-transform: uppercase;
+}
+
+#phone-number-text {
+  font-size: 0.7em;
 }
 
 .fa {
