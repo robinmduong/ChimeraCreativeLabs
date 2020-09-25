@@ -13,8 +13,10 @@ class About extends Component {
                 "images/skills/css3-logo.png",
                 "images/skills/es6-logo.png",
                 "images/skills/bootstrap-logo.png",
+                "images/skills/wordpress-logo.png",
                 "images/skills/ajax-logo.png",
-                "images/skills/jquery-logo.png"
+                "images/skills/jquery-logo.png",
+                "images/skills/elementor-logo.png"
             ],
             serverSide: [
                 "images/skills/dotnet-core-logo.png",
@@ -43,15 +45,15 @@ class About extends Component {
                     <div className="skills-list">
                         <h2 classname="skill-header">Front-End</h2>
                             <div className="skill-icon-list">
-                                {this.state.frontEnd.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill}></img></div>)}
+                                {this.state.frontEnd.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}
                             </div>
                         <h2 classname="skill-header">Server-Side</h2>
                             <div className="skill-icon-list">
-                                {this.state.serverSide.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill}></img></div>)}                            
+                                {this.state.serverSide.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}                            
                             </div>
                         <h2 classname="skill-header">Back-End</h2>
                             <div className="skill-icon-list">
-                                {this.state.backEnd.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill}></img></div>)}                            
+                                {this.state.backEnd.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}                            
                             </div>
                         {/* <h2>Other</h2>
                             <div className="skill-icon-list">
@@ -59,7 +61,7 @@ class About extends Component {
                             </div> */}
                         <h2 classname="skill-header">Tools</h2>
                             <div className="skill-icon-list">
-                                {this.state.tools.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill}></img></div>)}                            
+                                {this.state.tools.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}                            
                             </div>
                     </div>
             </div>

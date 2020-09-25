@@ -5,7 +5,7 @@ class Footer extends Component {
     render() {
         return (
             <div className="footer">
-                Chimera Creative Labs <span className="yellow">©2020</span>
+                <a href="https://www.chimeracreativelabs.com" id="footer-link">Chimera Creative Labs</a><span className="yellow"> ©2020</span>
             </div>
         )
     }
