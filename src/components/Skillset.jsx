@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 
-class About extends Component {
+class Skillset extends Component {
 
     constructor(props) {
         super(props);
@@ -43,15 +43,15 @@ class About extends Component {
             <div className="page-contents" id="about">
                 <h1>Skills</h1>
                     <div className="skills-list">
-                        <h2 classname="skill-header">Front-End</h2>
+                        <h2 className="skill-header">Front-End</h2>
                             <div className="skill-icon-list">
                                 {this.state.frontEnd.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}
                             </div>
-                        <h2 classname="skill-header">Server-Side</h2>
+                        <h2 className="skill-header">Server-Side</h2>
                             <div className="skill-icon-list">
                                 {this.state.serverSide.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}                            
                             </div>
-                        <h2 classname="skill-header">Back-End</h2>
+                        <h2 className="skill-header">Back-End</h2>
                             <div className="skill-icon-list">
                                 {this.state.backEnd.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}                            
                             </div>
@@ -59,7 +59,7 @@ class About extends Component {
                             <div className="skill-icon-list">
                                 {this.state.other.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill}></img></div>)}                            
                             </div> */}
-                        <h2 classname="skill-header">Tools</h2>
+                        <h2 className="skill-header">Tools</h2>
                             <div className="skill-icon-list">
                                 {this.state.tools.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}                            
                             </div>
@@ -70,4 +70,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default Skillset;

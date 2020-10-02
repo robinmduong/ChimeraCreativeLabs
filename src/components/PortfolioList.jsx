@@ -88,7 +88,7 @@ class PortfolioList extends Component {
                         liveSite: "https://www.acutedata.com/shopify/",
                     },
                     {
-                        id: 4,
+                        id: 5,
                         mainImage: "images/portfolio-img/acute-data-zippykind-1.png", 
                         portfolioUrl: "/zippykind",
                         name: "Zippykind Microsite", 
@@ -106,8 +106,8 @@ class PortfolioList extends Component {
                         liveSite: "https://www.acutedata.com/zippykind/",
                     },
                     {
-                        id: 5,
-                        mainImage: "images/portfolio-img/acute-data-trainual-1.png", 
+                        id: 6,
+                        mainImage: "images/portfolio-img/acute-data-trainual-2.png", 
                         portfolioUrl: "/trainual",
                         name: "Trainual Microsite", 
                         shortDescription: "Trainual microsite for a business that specializes in business solutions, ERP, and CRM software.",
