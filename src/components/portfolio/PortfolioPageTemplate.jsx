@@ -9,7 +9,11 @@ const PortfolioPageTemplate = (props) => {
             <div className="page-contents">
                 <h1 className="portfolio-page-header">{item.name}</h1>
                     <p className="short-description">{item.shortDescription}</p>
-                <img src={`../${item.mainImage}`} className="portfolio-details-image" alt="portfolio"/>
+                {item.liveSite !== null ? (
+                    <a href={item.liveSite}><img src={`../${item.mainImage}`} className="portfolio-details-image" alt="portfolio"/></a>
+                ) : (
+                    <img src={`../${item.mainImage}`} className="portfolio-details-image" alt="portfolio"/>
+                )}
                 <h2 className="portfolio-page-header">About This Project</h2>
                     <p className="description">{item.description}</p>
                 <h2 className="portfolio-page-header">Features</h2>
@@ -24,19 +28,17 @@ const PortfolioPageTemplate = (props) => {
                             {item.skills.map(skill => <li key={skill} className="skill-container"><img className="skill-icon" src={skill} alt="skill-icon"></img></li>)}
                         </ul>
                     </span>
-                {props.item.sourceCode != null &&
-                    <span>
-                        <h2 className="portfolio-page-header">Source Code</h2>
-                        <p className="description"><a href={item.sourceCode}>View Project on GitHub</a></p>
-                    </span>
+                {item.liveSite != null &&
+                    <a id="live-site-button" className="button inline-button" href={item.liveSite}>
+                        See Live Site
+                    </a>
                 }
-                {props.item.liveSite != null &&
-                    <span>
-                        <h2 className="portfolio-page-header">Live Site</h2>
-                        <p className="description"><a href={item.liveSite}>Want to see the rest of the project? Click here to view the live website!</a></p>
-                    </span>
+                {item.sourceCode != null &&
+                    <a id="source-code-button" className="button inline-button" href={item.sourceCode}>
+                        View Source Code
+                    </a>
                 }
-                <a id="portfolio-home-button" className="button" href="/#portfolio">
+                <a id="portfolio-home-button" className="button inline-button" href="/#portfolio">
                     Return to Portfolio
                 </a>
 

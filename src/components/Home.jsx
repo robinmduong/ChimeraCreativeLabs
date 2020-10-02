@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import PortfolioList from "./PortfolioList";
+import Skillset from "./Skillset";
 
 class Home extends Component {
     constructor(props) {
@@ -12,12 +14,10 @@ class Home extends Component {
     render() {
         return (
             <React.Fragment>
-                <div id="home" class="desaturate">
-                    <div id="hero-banner">
-                        <div id="banner-text">
-                        <h1>Chimera Creative Labs</h1>
-                        </div>
-                    </div>
+                <PortfolioList />
+                <Skillset />
+                <div className="page-contents">
+                    <a className="home button inline-button" href="/#portfolio">Back to Portfolio</a>
                 </div>
             </React.Fragment>
         )
