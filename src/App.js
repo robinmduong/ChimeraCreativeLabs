@@ -6,12 +6,7 @@ import {
 // import About from "./components/About";
 // import PortfolioList from "./components/PortfolioList";
 import Home from "./components/Home";
-import LuxorRealEstate from "./components/portfolio/LuxorRealEstate";
-import ShopifyMicrosite from "./components/portfolio/ShopifyMicrosite";
-import ShopifyPosMicrosite from "./components/portfolio/ShopifyPosMicrosite";
-import TrainualMicrosite from "./components/portfolio/TrainualMicrosite"
-import ZippykindMicrosite from "./components/portfolio/ZippykindMicrosite"
-import WebMall from "./components/portfolio/WebMall";
+import WebDevPageTemplate from "./components/portfolio/webdev/WebDevPageTemplate";
 import "./App.css";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -25,12 +20,12 @@ class App extends Component {
                     <Route exact path="/" component={About} /> */}
                     <Route exact path="/" component={Home} />
                     <Route exact path="/home" component={Home} />
-                    <Route exact path="/webmall" component={WebMall} />
-                    <Route exact path="/luxor-real-estate" component={LuxorRealEstate} />
-                    <Route exact path="/shopify" component={ShopifyMicrosite} />
-                    <Route exact path="/shopify-pos" component={ShopifyPosMicrosite} />
-                    <Route exact path="/trainual" component={TrainualMicrosite} />
-                    <Route exact path="/zippykind" component={ZippykindMicrosite} />
+                    <Route exact path="/webmall" component={WebDevPageTemplate} />
+                    <Route exact path="/luxor-real-estate" component={WebDevPageTemplate} />
+                    <Route exact path="/shopify" component={WebDevPageTemplate} />
+                    <Route exact path="/shopify-pos" component={WebDevPageTemplate} />
+                    <Route exact path="/trainual" component={WebDevPageTemplate} />
+                    <Route exact path="/zippykind" component={WebDevPageTemplate} />
                 </ScrollToTop>
                 {/* </Switch> */}
             </div>

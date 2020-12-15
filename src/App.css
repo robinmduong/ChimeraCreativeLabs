@@ -105,12 +105,12 @@ h1, h2 {
 
 
 #banner-text{
-  background-color: rgba(0, 0, 0, 0.85);
-  bottom: 50%;
+  background-color: rgba(0, 0, 0, 0.87);
+  bottom: 20%;
   right: 0px;
   color: white;
   font-family: 'Raleway', sans-serif; 
-  font-size: 25px;
+  font-size: 27px;
   line-height: 80px;
   margin: 0px;
   padding: 0px 30px;
@@ -178,13 +178,13 @@ h1, h2 {
   text-shadow: 1px 1px 0px black;
 }
 
-#portfolio-home-button {
+#portfolio-button {
   background-color: #F7790B;
 }
 
 .skill-icon-list {
   max-width: 100%;
-  padding: 0px 20px;
+  padding: 0px 10px 30px;
 }
 
 .skill-container {
@@ -192,8 +192,8 @@ h1, h2 {
 }
 
 .skill-icon {
-  max-height: 100px;
-  max-width: 320px;
+  max-height: 80px;
+  max-width: 80px;
   margin-right: 50px;
   margin-bottom: 20px;
 }
@@ -202,19 +202,6 @@ h1, h2 {
   opacity: 0.7;
   transition: 0.25s;
 }
-
-
-/* .skill-icon {
-  background-color: rgba(180, 0, 0);
-  text-shadow: 1px 1px 1px black;
-  border-radius: 50px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
-  color: white;
-  display: inline-block;
-  margin-top: 10px;
-  margin-left: 10px;
-  padding: 5px 20px;
-} */
 
 ul {
   padding-left: 0;
@@ -328,32 +315,25 @@ ul {
   background: none;
 }
 #hero-banner {
-  /* background: linear-gradient(0deg, rgb(82, 81, 81) 0%, rgb(0, 0, 0) 100%); */
-  background-image: url("/images/LiondragonEyeColor.png");
-  background-position: center;
+  background-image: url("/images/LiondragonWide.png");
+  background-position: top left;
   background-size: cover;
   max-width: 100%;
   height: 700px;
-  object-position: top left;
+  object-position: center left;
   overflow: hidden;
-  padding: 170px 0px 100px 0px;
+  padding: 0px;
   position: relative;
 }
 
 @media screen and (max-width: 1200px) {
   #banner-text {
-    bottom: 30%;
+    bottom: 5%;
     line-height: 2.4em;
   }
   .portfolio-card, .portfolio-details-image {
     width: 100%;
     height: 450px;
-  }
-  #banner-text {
-    bottom: 25%;
-  }
-  #portfolio-home-button {
-    max-width: 40%;
   }
 }
 
@@ -366,19 +346,13 @@ ul {
     height: 400px;
   }
   .skill-icon {
-    max-height: 80px;
+    max-height: 70px;
     max-width: 180px;
     margin-right: 30px;
     margin-bottom: 0px;
   }
   .topnav a {
     letter-spacing: 0em;
-  }
-  #banner-text {
-    bottom:15%;
-  }
-  #hero-banner {
-    padding: 0px;
   }
   
 }
@@ -429,15 +403,11 @@ ul {
     text-align: left;
   }
   #banner-text {
-    bottom: 5%;
     font-size: 1em;
     line-height: 2.6em;
   }
-  #portfolio-home-button {
-    max-width: 60%;
-  }
   #hero-banner {
-    height: 250px;
+    height: 350px;
     padding: 80px 0px 10px 0px;
   }
 }
@@ -449,14 +419,7 @@ ul {
   #hero-banner {
     height: 300px;
   }
-  #banner-text {
-    bottom: 5%;
-    font-size: .9em;
-  }
   .portfolio-card {
     height: 250px;
-  }
-  #portfolio-home-button {
-    max-width: 70%;
   }
 }
