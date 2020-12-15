@@ -40,7 +40,7 @@ class Skillset extends Component {
     render() {
         return (
             <React.Fragment>
-            <div className="page-contents" id="about">
+            <div className="page-contents" id="skillslist">
                 <h1>Skills</h1>
                     <div className="skills-list">
                         <h2 className="skill-header">Front-End</h2>
@@ -55,10 +55,6 @@ class Skillset extends Component {
                             <div className="skill-icon-list">
                                 {this.state.backEnd.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}                            
                             </div>
-                        {/* <h2>Other</h2>
-                            <div className="skill-icon-list">
-                                {this.state.other.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill}></img></div>)}                            
-                            </div> */}
                         <h2 className="skill-header">Tools</h2>
                             <div className="skill-icon-list">
                                 {this.state.tools.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}                            

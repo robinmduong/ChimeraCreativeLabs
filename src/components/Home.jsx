@@ -17,7 +17,9 @@ class Home extends Component {
                 <PortfolioList />
                 <Skillset />
                 <div className="page-contents">
-                    <a className="home button inline-button" href="/#portfolio">Back to Portfolio</a>
+                    <a className="home button inline-button 
+                    portfolio-button internal-link-button" 
+                    href="/#portfolio">Portfolio</a>
                 </div>
             </React.Fragment>
         )

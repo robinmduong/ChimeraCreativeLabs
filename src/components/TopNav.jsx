@@ -21,7 +21,7 @@ class TopNav extends Component {
                 {/* <a href="/"><img src="../images/chimera-logo-white-1.png" className="chimera-logo" alt="Chimera Creative Labs logo"></img></a> */}
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
                     <a className="home" href="/#home">Home</a>
-                    <a className="about" href="/#about">About</a>
+                    <a className="skillslist" href="/#skillslist">Skills</a>
                     <a className="home" href="/#portfolio">Portfolio</a>
                     <a className="home" href={Pdf} target="_blank" rel="noopener noreferrer">Résumé</a>
                     <a className="contact" href="/#contact">Contact</a>

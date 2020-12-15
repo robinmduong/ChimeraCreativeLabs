@@ -1,7 +1,7 @@
 import React from "react";
-import PortfolioPageTemplate from "./PortfolioPageTemplate";
+import PortfolioPageTemplate from "../webdev/PortfolioPageTemplate";
 
-const ShopifyMicrosite = (props) => {
+const WebDevPageTemplate = (props) => {
     let item = props.location.state.item;
     return (
         <PortfolioPageTemplate
@@ -11,4 +11,4 @@ const ShopifyMicrosite = (props) => {
     )
 }
 
-export default ShopifyMicrosite;
+export default WebDevPageTemplate;

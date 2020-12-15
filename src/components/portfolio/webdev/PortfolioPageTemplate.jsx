@@ -29,7 +29,7 @@ const PortfolioPageTemplate = (props) => {
                         </ul>
                     </span>
                 {item.liveSite != null &&
-                    <a id="live-site-button" className="button inline-button" href={item.liveSite}>
+                    <a id="internal-link-button" className="button inline-button" href={item.liveSite}>
                         See Live Site
                     </a>
                 }
@@ -38,7 +38,7 @@ const PortfolioPageTemplate = (props) => {
                         View Source Code
                     </a>
                 }
-                <a id="portfolio-home-button" className="button inline-button" href="/#portfolio">
+                <a id="internal-link-button portfolio-button" className="button inline-button" href="/#portfolio">
                     Return to Portfolio
                 </a>
 
