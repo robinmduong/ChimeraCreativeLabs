@@ -1,6 +1,7 @@
 import React from "react";
 
 const PortfolioPageTemplate = (props) => {
+
     let item = props.item;
 
     return (
@@ -40,11 +41,6 @@ const PortfolioPageTemplate = (props) => {
                 <a id="internal-link-button portfolio-button" className="button inline-button" href="/#portfolio">
                     Return to Portfolio
                 </a>
-                {item.sourceCode != null &&
-                    <a id="source-code-button" className="button inline-button" href={item.sourceCode}>
-                        View Source Code
-                    </a>
-                }
         </div>
         </React.Fragment>
     )
