@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, withRouter } from "react-router-dom";
 
 const PortfolioCard = (props) => {
 
@@ -21,4 +21,4 @@ const PortfolioCard = (props) => {
 
 }
 
-export default PortfolioCard;
+export default withRouter(PortfolioCard;
