@@ -27,7 +27,6 @@ class TopNav extends Component {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
                     <a className="home" href="/#home">Home</a>
                     <Link to="/about">About</Link>
-                    {/* <a className="about" href="/about">About</a> */}
                     <a className="skillslist" href="/#skillslist">Skills</a>
                     <a className="home" href="/#webdevportfolio">Web Dev</a>
                     <a className="home" href={Pdf} target="_blank" rel="noopener noreferrer">Résumé</a>

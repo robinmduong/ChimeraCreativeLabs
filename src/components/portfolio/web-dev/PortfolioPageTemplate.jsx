@@ -1,7 +1,6 @@
 import React from "react";
 
 const PortfolioPageTemplate = (props) => {
-
     let item = props.item;
 
     return (
