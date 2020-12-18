@@ -7,7 +7,7 @@ class About extends Component {
             <div className="about page-contents">
                 <div id="about-text">
                     <h1>About Robin</h1>
-                    <a href="https://www.linkedin.com/in/robinmduong"><img src="../images/about-photos/UC-Berkeley-grad.jpg" className="about-image" alt="Robin-Duong-UC-Berkeley-graduation" target="_blank"></img></a>
+                    <img src="../images/about-photos/UC-Berkeley-grad.jpg" className="about-image" alt="Robin-Duong-UC-Berkeley-graduation" target="_blank"></img>
                     <p>
                     I graduated with a Bachelor of Science from UC Berkeley. I am a full-stack web developer with a background in marketing analytics and SEO, but I think of myself as a storyteller first. I live to tell stories, whether it's with code, numbers, words, or images. Actively seeking remote and in-office opportunities in San Jose, Los Angeles, Irvine, Orange County, and Santa Monica.
                     </p>
