@@ -42,6 +42,10 @@ h1, h2 {
   text-transform: uppercase;
 }
 
+.about-image {
+  height: 350px;
+}
+
 .button:hover {
   opacity: 0.85;
 }
@@ -75,7 +79,7 @@ h1, h2 {
 }
 
 .page-contents {
-  padding: 20px 150px;
+  padding: 50px 150px 0px 150px;
 }
 
 .portfolio-details-image {
@@ -184,7 +188,7 @@ h1, h2 {
 
 .skill-icon-list {
   max-width: 100%;
-  padding: 0px 10px 30px;
+  padding: 0px 50px 0px;
 }
 
 .skill-container {
@@ -193,7 +197,7 @@ h1, h2 {
 
 .skill-icon {
   max-height: 80px;
-  max-width: 80px;
+  max-width: 150px;
   margin-right: 50px;
   margin-bottom: 20px;
 }
@@ -266,7 +270,6 @@ ul {
   text-align: center;
 }
 
-
 .topnav {
   background-color: black;
   box-shadow: 1px 1px 1px #222;
@@ -276,11 +279,10 @@ ul {
   margin: 0;
   min-width: 100%;
   overflow: hidden;
-  padding: 0px;
   position: fixed;
   text-align: right;
   top: 0;
-  z-index: 99;
+  z-index:999999 !important;
 }
 
 .topnav a {
@@ -290,7 +292,7 @@ ul {
   font-size: 1.1em;
   height: 30px;
   line-height: 50%;
-  padding: 25px 35px 5px 10px;
+  padding: 20px 10px 0px 25px;
 }
 
 /* .chimera-logo {

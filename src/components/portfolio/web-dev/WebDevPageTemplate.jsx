@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioPageTemplate from "../webdev/PortfolioPageTemplate";
+import PortfolioPageTemplate from "../web-dev/PortfolioPageTemplate";
 
 const WebDevPageTemplate = (props) => {
     let item = props.location.state.item;

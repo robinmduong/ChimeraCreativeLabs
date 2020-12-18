@@ -19,7 +19,7 @@ class Home extends Component {
                 <div className="page-contents">
                     <a className="home button inline-button 
                     portfolio-button internal-link-button" 
-                    href="/#portfolio">Portfolio</a>
+                    href="/#webdevportfolio">Web Dev Portfolio</a>
                 </div>
             </React.Fragment>
         )
