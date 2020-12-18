@@ -6,7 +6,7 @@ class PortfolioList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            portfolioHomeUrl: "/#portfolio",
+            portfolioHomeUrl: "/#webdevportfolio",
             mappedPortfolio: [
                     {
                         id: 1,
@@ -61,7 +61,7 @@ class PortfolioList extends Component {
                     },
                     {
                         id: 3,
-                        mainImage: "images/portfolio-img/acute-data-shopify-pos-1.png", 
+                        mainImage: "images/portfolio-img/acute-shopify-pos-1.png", 
                         portfolioUrl: "/shopify-pos",
                         name: "Shopify Point-of-Sale Microsite", 
                         shortDescription: "Shopify point-of-sale (POS) microsite for a business that specializes in business solutions, ERP, and CRM software.",
@@ -79,7 +79,7 @@ class PortfolioList extends Component {
                     },
                     {
                         id: 4,
-                        mainImage: "images/portfolio-img/acute-data-shopify-1.png", 
+                        mainImage: "images/portfolio-img/acute-shopify-1.png", 
                         portfolioUrl: "/shopify",
                         name: "Shopify Microsite", 
                         shortDescription: "Shopify microsite for a business that specializes in business solutions, ERP, and CRM software.",
@@ -97,7 +97,7 @@ class PortfolioList extends Component {
                     },
                     {
                         id: 5,
-                        mainImage: "images/portfolio-img/acute-data-zippykind-1.png", 
+                        mainImage: "images/portfolio-img/acute-zippykind-1.png", 
                         portfolioUrl: "/zippykind",
                         name: "Zippykind Microsite", 
                         shortDescription: "Zippykind microsite for a business that specializes in business solutions, ERP, and CRM software.",
@@ -115,7 +115,7 @@ class PortfolioList extends Component {
                     },
                     {
                         id: 6,
-                        mainImage: "images/portfolio-img/acute-data-trainual-2.png", 
+                        mainImage: "images/portfolio-img/acute-trainual-2.png", 
                         portfolioUrl: "/trainual",
                         name: "Trainual Microsite", 
                         shortDescription: "Trainual microsite for a business that specializes in business solutions, ERP, and CRM software.",
@@ -131,6 +131,60 @@ class PortfolioList extends Component {
                         sourceCode: null,
                         liveSite: "https://www.acutedata.com/trainual/",
                     },
+                    {
+                        id: 7,
+                        mainImage: "images/portfolio-img/acute-procurify-1.png", 
+                        portfolioUrl: "/procurify",
+                        name: "Procurify Microsite", 
+                        shortDescription: "Procurify microsite for a business that specializes in business solutions, ERP, and CRM software.",
+                        description: "Responsive front-end design for a Trainual microsite for a business solutions software reseller. Built with WordPress.com and Elementor Pro plugin.",
+                        features: ["Responsive design on desktop, tablet, and mobile devices", "Featuring Procurify's space sloth mascot (Yes, you heard me right!)", "Vibrant green theme to match Procurify brand"],
+                        skills: [
+                            "images/skills/wordpress-logo.png",
+                            "images/skills/html5-logo.png",
+                            "images/skills/css3-logo.png",
+                            "images/skills/javascript-logo.png", 
+                            "images/skills/elementor-logo.png"
+                        ],
+                        sourceCode: null,
+                        liveSite: "https://www.acutedata.com/procurify-procurement-software/",
+                    },
+                    {
+                        id: 8,
+                        mainImage: "images/portfolio-img/acute-zoho-bundle.png", 
+                        portfolioUrl: "/zoho-bundle",
+                        name: "Zoho Microsite", 
+                        shortDescription: "Zoho microsite for a business that specializes in business solutions, ERP, and CRM software.",
+                        description: "Responsive front-end design for a Trainual microsite for a business solutions software reseller. Built with WordPress.com and Elementor Pro plugin.",
+                        features: ["Responsive design on desktop, tablet, and mobile devices", "Over 85 internal links to fact and pricing sheets for all of Zoho's products for a seamless user experience.", "Embedded product overview video for increased user interaction."],
+                        skills: [
+                            "images/skills/wordpress-logo.png",
+                            "images/skills/html5-logo.png",
+                            "images/skills/css3-logo.png",
+                            "images/skills/javascript-logo.png", 
+                            "images/skills/elementor-logo.png"
+                        ],
+                        sourceCode: null,
+                        liveSite: "https://www.acutedata.com/zoho/",
+                    },
+                    {
+                        id: 8,
+                        mainImage: "images/portfolio-img/acute-zoho-one.png", 
+                        portfolioUrl: "/zoho-one",
+                        name: "Zoho One Microsite", 
+                        shortDescription: "Zoho One microsite for a business that specializes in business solutions, ERP, and CRM software.",
+                        description: "Responsive front-end design for a Trainual microsite for a business solutions software reseller. Built with WordPress.com and Elementor Pro plugin.",
+                        features: ["Responsive design on desktop, tablet, and mobile devices", "Over 50 internal links to fact and pricing sheets for all of Zoho's products for a seamless user experience.", "Embedded product overview video for increased user interaction."],
+                        skills: [
+                            "images/skills/wordpress-logo.png",
+                            "images/skills/html5-logo.png",
+                            "images/skills/css3-logo.png",
+                            "images/skills/javascript-logo.png", 
+                            "images/skills/elementor-logo.png"
+                        ],
+                        sourceCode: null,
+                        liveSite: "https://www.acutedata.com/zoho-one/",
+                    },
             ]
             }
         }
@@ -145,7 +199,7 @@ class PortfolioList extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="page-contents" id="portfolio">
+                <div className="page-contents" id="webdevportfolio">
                     <h1>Portfolio</h1>
                     <div className="portfolio-card-deck">
                         {this.state.mappedPortfolio.map(item => this.mapItems(item))}

@@ -6,8 +6,9 @@ import {
 // import About from "./components/About";
 // import PortfolioList from "./components/PortfolioList";
 import Home from "./components/Home";
-import WebDevPageTemplate from "./components/portfolio/webdev/WebDevPageTemplate";
+import WebDevPageTemplate from "./components/portfolio/web-dev/WebDevPageTemplate";
 import "./App.css";
+import About from "./components/About";
 import ScrollToTop from "./components/ScrollToTop";
 
 class App extends Component {
@@ -16,8 +17,6 @@ class App extends Component {
             <div>
                 {/* <Switch> */}
                 <ScrollToTop>
-                    {/* <Route exact path="/" component={PortfolioList} />
-                    <Route exact path="/" component={About} /> */}
                     <Route exact path="/" component={Home} />
                     <Route exact path="/home" component={Home} />
                     <Route exact path="/webmall" component={WebDevPageTemplate} />
@@ -26,6 +25,10 @@ class App extends Component {
                     <Route exact path="/shopify-pos" component={WebDevPageTemplate} />
                     <Route exact path="/trainual" component={WebDevPageTemplate} />
                     <Route exact path="/zippykind" component={WebDevPageTemplate} />
+                    <Route exact path="/procurify" component={WebDevPageTemplate} />
+                    <Route exact path="/zoho-bundle" component={WebDevPageTemplate} />
+                    <Route exact path="/zoho-one" component={WebDevPageTemplate} />
+                    <Route exact path="/about" component={About} />
                 </ScrollToTop>
                 {/* </Switch> */}
             </div>

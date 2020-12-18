@@ -27,12 +27,14 @@ class Skillset extends Component {
                 "images/skills/sql-server-logo.png",
                 "images/skills/postman-logo.png",
             ],
-            // other: ["Version Control", "OOP", "Agile Development", "Scrum", "Git"],
             tools: [
                 "images/skills/visual-studio-logo.png",
                 "images/skills/visual-studio-code-logo.png",
                 "images/skills/git-logo.png",
                 "images/skills/github-logo.png",
+            ],
+            graphicDesign: [
+                "images/skills/affinity-designer.png"
             ]
         }
     }
@@ -58,6 +60,10 @@ class Skillset extends Component {
                         <h2 className="skill-header">Tools</h2>
                             <div className="skill-icon-list">
                                 {this.state.tools.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}                            
+                            </div>
+                        <h2 className="skill-header">Graphic Design</h2>
+                            <div className="skill-icon-list">
+                                {this.state.graphicDesign.map(skill => <div className="skill-container" key={skill}><img className="skill-icon" src={skill} alt="skill-icon"></img></div>)}                            
                             </div>
                     </div>
             </div>

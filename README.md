@@ -4,7 +4,7 @@ Hi! My name is Robin Duong, and Chimera Creative Labs is my web development and 
 
 As of the time I am writing this, the website is 100% built in React--no Bootstrap templates!
 
-You can <a href="http://www.chimeracreativelabs.com">view my website here</a>.
+You can <a href="https://www.chimeracreativelabs.com">view my website here</a>.
 
 Have a project you want to discuss? <a href="https://www.linkedin.com/in/robinmduong">Let's connect!</a>
 

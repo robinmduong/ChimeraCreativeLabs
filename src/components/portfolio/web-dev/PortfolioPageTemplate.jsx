@@ -10,7 +10,7 @@ const PortfolioPageTemplate = (props) => {
                 <h1 className="portfolio-page-header">{item.name}</h1>
                     <p className="short-description">{item.shortDescription}</p>
                 {item.liveSite !== null ? (
-                    <a href={item.liveSite}><img src={`../${item.mainImage}`} className="portfolio-details-image" alt="portfolio"/></a>
+                    <a href={item.liveSite} target="_blank"><img src={`../${item.mainImage}`} className="portfolio-details-image" alt="portfolio"/></a>
                 ) : (
                     <img src={`../${item.mainImage}`} className="portfolio-details-image" alt="portfolio"/>
                 )}
@@ -29,7 +29,7 @@ const PortfolioPageTemplate = (props) => {
                         </ul>
                     </span>
                 {item.liveSite != null &&
-                    <a id="internal-link-button" className="button inline-button" href={item.liveSite}>
+                    <a id="internal-link-button" className="button inline-button" href={item.liveSite} target="_blank">
                         See Live Site
                     </a>
                 }
@@ -41,8 +41,12 @@ const PortfolioPageTemplate = (props) => {
                 <a id="internal-link-button portfolio-button" className="button inline-button" href="/#portfolio">
                     Return to Portfolio
                 </a>
-
-            </div>
+                {item.sourceCode != null &&
+                    <a id="source-code-button" className="button inline-button" href={item.sourceCode}>
+                        View Source Code
+                    </a>
+                }
+        </div>
         </React.Fragment>
     )
 }
